@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>스타로드 카라반 리조트 | 하이엔드 글램핑 멤버십</title>
-<meta name="description" content="가평 명지산 하이엔드 글램핑 카라반 리조트 스타로드. 오너스 클럽 멤버십 회원 모집 중. 무료 상담 신청하세요.">
+<title> 카라반 리조트 회원권 모집 | 하이엔드 글램핑 멤버십 </title>
+<meta name="description" content="하이엔드 글램핑 카라반 리조트. 오너스 클럽 멤버십 회원 모집 중. 무료 상담 신청하세요.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
@@ -37,11 +37,8 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ══════════════ UTILITY ══════════════ */
 .container { max-width: 480px; margin: 0 auto; padding: 0 20px; }
-.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
 
-/* ══════════════ HERO SECTION ══════════════ */
 .hero {
   position: relative;
   min-height: 75vh;
@@ -56,768 +53,139 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(180deg,
-      rgba(13,15,18,0.1) 0%,
-      rgba(13,15,18,0.3) 40%,
-      rgba(13,15,18,0.85) 70%,
-      rgba(13,15,18,1) 100%
-    );
+  background: linear-gradient(180deg, rgba(13,15,18,0.1) 0%, rgba(13,15,18,0.3) 40%, rgba(13,15,18,0.85) 70%, rgba(13,15,18,1) 100%);
   z-index: 1;
 }
 
 .hero-bg {
   position: absolute;
   inset: 0;
-  background:
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%25" stop-color="%23192a45"/><stop offset="50%25" stop-color="%231a3352"/><stop offset="100%25" stop-color="%23234a6b"/></linearGradient><linearGradient id="mountain" x1="0" y1="0" x2="0" y2="1"><stop offset="0%25" stop-color="%231a2e1a"/><stop offset="100%25" stop-color="%230d1a0d"/></linearGradient></defs><rect fill="url(%23sky)" width="1200" height="800"/><path d="M0 400 Q200 300 400 380 Q600 280 800 350 Q1000 300 1200 370 L1200 800 L0 800Z" fill="url(%23mountain)" opacity="0.7"/><path d="M0 500 Q300 420 600 470 Q900 400 1200 450 L1200 800 L0 800Z" fill="%230a140a" opacity="0.6"/><ellipse cx="900" cy="200" rx="60" ry="60" fill="%23C9A96E" opacity="0.15"/></svg>') center/cover no-repeat;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%25" stop-color="%23192a45"/><stop offset="50%25" stop-color="%231a3352"/><stop offset="100%25" stop-color="%23234a6b"/></linearGradient><linearGradient id="mountain" x1="0" y1="0" x2="0" y2="1"><stop offset="0%25" stop-color="%231a2e1a"/><stop offset="100%25" stop-color="%230d1a0d"/></linearGradient></defs><rect fill="url(%23sky)" width="1200" height="800"/><path d="M0 400 Q200 300 400 380 Q600 280 800 350 Q1000 300 1200 370 L1200 800 L0 800Z" fill="url(%23mountain)" opacity="0.7"/><path d="M0 500 Q300 420 600 470 Q900 400 1200 450 L1200 800 L0 800Z" fill="%230a140a" opacity="0.6"/><ellipse cx="900" cy="200" rx="60" ry="60" fill="%23C9A96E" opacity="0.15"/></svg>') center/cover no-repeat;
   animation: heroFloat 20s ease-in-out infinite;
 }
 
-@keyframes heroFloat {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-}
+@keyframes heroFloat { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
 
-.hero-content {
-  position: relative;
-  z-index: 2;
-}
+.hero-content { position: relative; z-index: 2; }
 
 .hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: rgba(201,169,110,0.12);
-  border: 1px solid rgba(201,169,110,0.3);
-  padding: 8px 18px;
-  border-radius: 100px;
-  font-size: 15px;
-  font-weight: 500;
-  color: var(--gold);
-  letter-spacing: 0.5px;
-  margin-bottom: 20px;
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(201,169,110,0.12); border: 1px solid rgba(201,169,110,0.3);
+  padding: 8px 18px; border-radius: 100px; font-size: 15px; font-weight: 500;
+  color: var(--gold); letter-spacing: 0.5px; margin-bottom: 20px;
   animation: fadeUp 0.8s ease both;
 }
 
-.hero-badge::before {
-  content: '';
-  width: 6px;
-  height: 6px;
-  background: var(--gold);
-  border-radius: 50%;
-  animation: pulse 2s infinite;
-}
+.hero-badge::before { content: ''; width: 6px; height: 6px; background: var(--gold); border-radius: 50%; animation: pulse 2s infinite; }
 
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.4; }
-}
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
 
-.hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--gold);
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-  animation: fadeUp 0.8s 0.1s ease both;
-}
+.hero h1 { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 400; color: var(--gold); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px; animation: fadeUp 0.8s 0.1s ease both; }
 
-.hero-title-main {
-  font-size: 40px;
-  font-weight: 900;
-  line-height: 1.25;
-  margin-bottom: 12px;
-  animation: fadeUp 0.8s 0.2s ease both;
-}
+.hero-title-main { font-size: 40px; font-weight: 900; line-height: 1.25; margin-bottom: 12px; animation: fadeUp 0.8s 0.2s ease both; }
+.hero-title-main em { font-style: normal; color: var(--gold); }
 
-.hero-title-main em {
-  font-style: normal;
-  color: var(--gold);
-}
+.hero-subtitle { font-size: 18px; color: var(--text-secondary); font-weight: 300; margin-bottom: 28px; animation: fadeUp 0.8s 0.3s ease both; }
 
-.hero-subtitle {
-  font-size: 18px;
-  color: var(--text-secondary);
-  font-weight: 300;
-  margin-bottom: 28px;
-  animation: fadeUp 0.8s 0.3s ease both;
-}
+@keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
 
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+.cta-group { display: flex; flex-direction: column; gap: 10px; animation: fadeUp 0.8s 0.4s ease both; }
 
-/* ══════════════ CTA BUTTONS ══════════════ */
-.cta-group {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  animation: fadeUp 0.8s 0.4s ease both;
-}
+.cta-btn { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 18px 24px; border-radius: var(--radius); font-size: 18px; font-weight: 600; text-decoration: none; transition: all 0.3s ease; cursor: pointer; border: none; }
+.cta-primary { background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%); color: var(--dark); box-shadow: 0 4px 24px rgba(201,169,110,0.3); }
+.cta-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(201,169,110,0.4); }
+.cta-kakao { background: #FEE500; color: #191919; }
+.cta-kakao:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(254,229,0,0.25); }
+.cta-icon { width: 22px; height: 22px; flex-shrink: 0; }
 
-.cta-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 18px 24px;
-  border-radius: var(--radius);
-  font-size: 18px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  border: none;
-}
+.trust-bar { display: flex; justify-content: center; gap: 24px; padding: 20px 0; margin-top: 24px; border-top: 1px solid var(--dark-border); animation: fadeUp 0.8s 0.5s ease both; }
+.trust-item { text-align: center; }
+.trust-value { font-size: 22px; font-weight: 700; color: var(--gold); }
+.trust-label { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
 
-.cta-primary {
-  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
-  color: var(--dark);
-  box-shadow: 0 4px 24px rgba(201,169,110,0.3);
-}
-
-.cta-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 32px rgba(201,169,110,0.4);
-}
-
-.cta-kakao {
-  background: #FEE500;
-  color: #191919;
-}
-
-.cta-kakao:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 32px rgba(254,229,0,0.25);
-}
-
-.cta-icon {
-  width: 22px;
-  height: 22px;
-  flex-shrink: 0;
-}
-
-/* ══════════════ TRUST BAR ══════════════ */
-.trust-bar {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  padding: 20px 0;
-  margin-top: 24px;
-  border-top: 1px solid var(--dark-border);
-  animation: fadeUp 0.8s 0.5s ease both;
-}
-
-.trust-item {
-  text-align: center;
-}
-
-.trust-value {
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--gold);
-}
-
-.trust-label {
-  font-size: 13px;
-  color: var(--text-muted);
-  margin-top: 2px;
-}
-
-/* ══════════════ SECTION COMMON ══════════════ */
 section { padding: 56px 0; }
-
-.section-label {
-  font-family: 'Playfair Display', serif;
-  font-size: 13px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 8px;
-}
-
-.section-title {
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 1.35;
-  margin-bottom: 16px;
-}
-
-.section-desc {
-  font-size: 16px;
-  color: var(--text-secondary);
-  margin-bottom: 32px;
-  font-weight: 300;
-}
-
-/* ══════════════ INVESTMENT HIGHLIGHT ══════════════ */
-.invest-section {
-  background: linear-gradient(180deg, var(--dark) 0%, var(--dark-surface) 100%);
-}
-
-.invest-card {
-  background: var(--dark-card);
-  border: 1px solid var(--dark-border);
-  border-radius: 16px;
-  padding: 28px 24px;
-  margin-bottom: 16px;
-  position: relative;
-  overflow: hidden;
-}
-
-.invest-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--gold), transparent);
-}
-
-.invest-card-label {
-  font-size: 12px;
-  color: var(--text-muted);
-  font-weight: 500;
-  margin-bottom: 8px;
-}
-
-.invest-amount {
-  font-size: 36px;
-  font-weight: 900;
-  color: var(--text-primary);
-  line-height: 1.1;
-}
-
-.invest-amount span {
-  font-size: 18px;
-  font-weight: 400;
-  color: var(--text-secondary);
-}
-
-.invest-highlight {
-  color: var(--gold);
-}
-
-.invest-note {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 12px;
-  padding: 6px 12px;
-  background: rgba(76,175,125,0.1);
-  border: 1px solid rgba(76,175,125,0.2);
-  border-radius: 8px;
-  font-size: 13px;
-  color: var(--accent-green);
-  font-weight: 500;
-}
-
-/* ══════════════ INCOME TABLE ══════════════ */
-.income-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  border-radius: 12px;
-  overflow: hidden;
-  margin-bottom: 24px;
-  border: 1px solid var(--dark-border);
-}
-
-.income-table thead th {
-  background: var(--dark-card);
-  padding: 14px 16px;
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--text-muted);
-  text-align: center;
-  letter-spacing: 0.5px;
-  border-bottom: 1px solid var(--dark-border);
-}
-
-.income-table thead th:first-child {
-  text-align: left;
-}
-
-.income-table tbody td {
-  padding: 16px;
-  font-size: 14px;
-  text-align: center;
-  border-bottom: 1px solid rgba(42,45,56,0.5);
-  color: var(--text-secondary);
-}
-
-.income-table tbody td:first-child {
-  text-align: left;
-  font-weight: 500;
-  color: var(--text-primary);
-}
-
-.income-table tbody tr:last-child td {
-  border-bottom: none;
-}
-
-.income-table .highlight-row td {
-  color: var(--gold);
-  font-weight: 600;
-}
-
-.table-footnote {
-  font-size: 12px;
-  color: var(--text-muted);
-  text-align: center;
-  font-weight: 300;
-}
-
-/* ══════════════ FEATURES ══════════════ */
-.features-section {
-  background: var(--dark-surface);
-}
-
-.feature-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
-
-.feature-card {
-  background: var(--dark-card);
-  border: 1px solid var(--dark-border);
-  border-radius: 12px;
-  padding: 20px 16px;
-  transition: border-color 0.3s;
-}
-
-.feature-card:hover {
-  border-color: rgba(201,169,110,0.3);
-}
-
-.feature-icon {
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-.feature-name {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 4px;
-}
-
-.feature-desc {
-  font-size: 14px;
-  color: var(--text-muted);
-  line-height: 1.5;
-}
-
-/* ══════════════ WHY SECTION ══════════════ */
-.why-section {
-  background: linear-gradient(180deg, var(--dark-surface) 0%, var(--dark) 100%);
-}
-
-.why-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.why-item {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
-  padding: 20px;
-  background: var(--dark-card);
-  border: 1px solid var(--dark-border);
-  border-radius: 12px;
-}
-
-.why-number {
-  flex-shrink: 0;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
-  color: var(--dark);
-  font-size: 14px;
-  font-weight: 700;
-  border-radius: 8px;
-}
-
-.why-text h4 {
-  font-size: 17px;
-  font-weight: 600;
-  margin-bottom: 4px;
-}
-
-.why-text p {
-  font-size: 15px;
-  color: var(--text-secondary);
-  font-weight: 300;
-}
-
-/* ══════════════ NEWS / PRESS ══════════════ */
-.press-section { background: var(--dark); }
-
-.press-card {
-  display: block;
-  padding: 16px 0;
-  border-bottom: 1px solid var(--dark-border);
-  text-decoration: none;
-  transition: opacity 0.3s;
-}
-
-.press-card:first-child { padding-top: 0; }
-.press-card:last-child { border-bottom: none; }
-.press-card:hover { opacity: 0.7; }
-
-.press-source {
-  font-size: 13px;
-  color: var(--gold);
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  margin-bottom: 4px;
-}
-
-.press-title {
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--text-primary);
-  line-height: 1.5;
-}
-
-.press-arrow {
-  font-size: 14px;
-  color: var(--text-muted);
-  margin-top: 4px;
-}
-
-/* ══════════════ CONSULTANT SECTION ══════════════ */
-.consultant-section {
-  background: var(--dark-surface);
-}
-
-.consultant-card {
-  background: var(--dark-card);
-  border: 1px solid var(--dark-border);
-  border-radius: 16px;
-  padding: 32px 24px;
-  text-align: center;
-}
-
-.consultant-avatar {
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 16px;
-  font-size: 28px;
-  color: var(--dark);
-  font-weight: 700;
-  font-family: 'Playfair Display', serif;
-}
-
-.consultant-name {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 4px;
-}
-
-.consultant-role {
-  font-size: 15px;
-  color: var(--text-muted);
-  margin-bottom: 4px;
-}
-
-.consultant-company {
-  font-size: 15px;
-  color: var(--gold);
-  font-weight: 500;
-  margin-bottom: 20px;
-}
-
-.consultant-msg {
-  font-size: 16px;
-  color: var(--text-secondary);
-  font-weight: 300;
-  line-height: 1.8;
-  padding: 16px;
-  background: rgba(201,169,110,0.05);
-  border-radius: 12px;
-  border-left: 2px solid var(--gold);
-  text-align: left;
-  margin-bottom: 24px;
-}
-
-/* ══════════════ BOTTOM CTA ══════════════ */
-.bottom-cta {
-  padding: 48px 0 40px;
-  background: linear-gradient(180deg, var(--dark-surface) 0%, var(--dark) 50%);
-  text-align: center;
-}
-
-.bottom-cta-title {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 6px;
-}
-
-.bottom-cta-sub {
-  font-size: 16px;
-  color: var(--text-secondary);
-  font-weight: 300;
-  margin-bottom: 24px;
-}
-
-/* ══════════════ FLOATING CTA ══════════════ */
-.floating-cta {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  background: linear-gradient(180deg, transparent 0%, var(--dark) 30%);
-  padding: 20px 20px 24px;
-  pointer-events: none;
-}
-
-.floating-cta .cta-group {
-  max-width: 480px;
-  margin: 0 auto;
-  pointer-events: all;
-  flex-direction: row;
-}
-
-.floating-cta .cta-btn {
-  flex: 1;
-  padding: 14px 12px;
-  font-size: 14px;
-}
-
-/* ══════════════ FOOTER ══════════════ */
-footer {
-  padding: 32px 0 100px;
-  text-align: center;
-  border-top: 1px solid var(--dark-border);
-}
-
-.footer-logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 16px;
-  color: var(--gold);
-  letter-spacing: 2px;
-  margin-bottom: 8px;
-}
-
-.footer-company {
-  font-size: 12px;
-  color: var(--text-muted);
-  margin-bottom: 4px;
-}
-
-.footer-legal {
-  font-size: 11px;
-  color: var(--text-muted);
-  line-height: 1.8;
-  opacity: 0.6;
-}
-
-/* ══════════════ DIVIDER ══════════════ */
-.gold-divider {
-  width: 40px;
-  height: 1px;
-  background: var(--gold);
-  margin-bottom: 24px;
-  opacity: 0.5;
-}
-
-/* ══════════════ SCROLL ANIMATIONS ══════════════ */
-.reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ══════════════ MARKET HOOK BANNER ══════════════ */
-.market-hook {
-  background: linear-gradient(90deg, rgba(232,93,93,0.08) 0%, rgba(201,169,110,0.08) 100%);
-  border-bottom: 1px solid rgba(232,93,93,0.15);
-  padding: 12px 0;
-  overflow: hidden;
-}
-
-.market-hook-inner {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.market-hook-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  background: rgba(232,93,93,0.15);
-  border: 1px solid rgba(232,93,93,0.25);
-  padding: 3px 10px;
-  border-radius: 100px;
-  font-size: 11px;
-  font-weight: 600;
-  color: var(--accent-red);
-  white-space: nowrap;
-}
-
-.market-hook-tag .blink {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  background: var(--accent-red);
-  border-radius: 50%;
-  animation: blink 1.2s infinite;
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.2; }
-}
-
-.market-hook-text {
-  font-size: 12px;
-  color: var(--text-secondary);
-}
-
-.market-hook-text strong {
-  color: var(--gold);
-  font-weight: 600;
-}
-
-/* ══════════════ STOCK COMPARISON ══════════════ */
-.stock-compare {
-  background: var(--dark-card);
-  border: 1px solid var(--dark-border);
-  border-radius: 16px;
-  padding: 24px 20px;
-  margin-bottom: 24px;
-}
-
-.stock-compare-title {
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--text-muted);
-  margin-bottom: 16px;
-  text-align: center;
-}
-
-.compare-bars {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.compare-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.compare-label {
-  font-size: 12px;
-  color: var(--text-secondary);
-  width: 60px;
-  flex-shrink: 0;
-  text-align: right;
-}
-
-.compare-bar-wrap {
-  flex: 1;
-  height: 36px;
-  background: rgba(255,255,255,0.03);
-  border-radius: 8px;
-  position: relative;
-  overflow: hidden;
-}
-
-.compare-bar {
-  height: 100%;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding-right: 10px;
-  font-size: 12px;
-  font-weight: 600;
-  transition: width 1.5s ease;
-  width: 0;
-}
-
-.bar-stock {
-  background: linear-gradient(90deg, rgba(232,93,93,0.15) 0%, rgba(232,93,93,0.35) 100%);
-  color: var(--accent-red);
-}
+.section-label { font-family: 'Playfair Display', serif; font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+.section-title { font-size: 28px; font-weight: 700; line-height: 1.35; margin-bottom: 16px; }
+.section-desc { font-size: 16px; color: var(--text-secondary); margin-bottom: 32px; font-weight: 300; }
+
+.invest-section { background: linear-gradient(180deg, var(--dark) 0%, var(--dark-surface) 100%); }
+.invest-card { background: var(--dark-card); border: 1px solid var(--dark-border); border-radius: 16px; padding: 28px 24px; margin-bottom: 16px; position: relative; overflow: hidden; }
+.invest-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, var(--gold), transparent); }
+.invest-card-label { font-size: 12px; color: var(--text-muted); font-weight: 500; margin-bottom: 8px; }
+.invest-amount { font-size: 36px; font-weight: 900; color: var(--text-primary); line-height: 1.1; }
+.invest-amount span { font-size: 18px; font-weight: 400; color: var(--text-secondary); }
+.invest-highlight { color: var(--gold); }
+.invest-note { display: inline-flex; align-items: center; gap: 6px; margin-top: 12px; padding: 6px 12px; background: rgba(76,175,125,0.1); border: 1px solid rgba(76,175,125,0.2); border-radius: 8px; font-size: 13px; color: var(--accent-green); font-weight: 500; }
+
+.features-section { background: var(--dark-surface); }
+.feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.feature-card { background: var(--dark-card); border: 1px solid var(--dark-border); border-radius: 12px; padding: 20px 16px; transition: border-color 0.3s; }
+.feature-card:hover { border-color: rgba(201,169,110,0.3); }
+.feature-icon { font-size: 28px; margin-bottom: 10px; }
+.feature-name { font-size: 16px; font-weight: 600; margin-bottom: 4px; }
+.feature-desc { font-size: 14px; color: var(--text-muted); line-height: 1.5; }
+
+.why-section { background: linear-gradient(180deg, var(--dark-surface) 0%, var(--dark) 100%); }
+.why-list { display: flex; flex-direction: column; gap: 16px; }
+.why-item { display: flex; gap: 16px; align-items: flex-start; padding: 20px; background: var(--dark-card); border: 1px solid var(--dark-border); border-radius: 12px; }
+.why-number { flex-shrink: 0; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%); color: var(--dark); font-size: 14px; font-weight: 700; border-radius: 8px; }
+.why-text h4 { font-size: 17px; font-weight: 600; margin-bottom: 4px; }
+.why-text p { font-size: 15px; color: var(--text-secondary); font-weight: 300; }
+
+.consultant-section { background: var(--dark-surface); }
+.consultant-card { background: var(--dark-card); border: 1px solid var(--dark-border); border-radius: 16px; padding: 32px 24px; text-align: center; }
+.consultant-avatar { width: 72px; height: 72px; border-radius: 50%; background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 28px; color: var(--dark); font-weight: 700; font-family: 'Playfair Display', serif; }
+.consultant-name { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+.consultant-role { font-size: 15px; color: var(--text-muted); margin-bottom: 4px; }
+.consultant-msg { font-size: 16px; color: var(--text-secondary); font-weight: 300; line-height: 1.8; padding: 16px; background: rgba(201,169,110,0.05); border-radius: 12px; border-left: 2px solid var(--gold); text-align: left; margin-bottom: 24px; }
+
+.bottom-cta { padding: 48px 0 40px; background: linear-gradient(180deg, var(--dark-surface) 0%, var(--dark) 50%); text-align: center; }
+.bottom-cta-title { font-size: 26px; font-weight: 700; margin-bottom: 6px; }
+.bottom-cta-sub { font-size: 16px; color: var(--text-secondary); font-weight: 300; margin-bottom: 24px; }
+
+.floating-cta { position: fixed; bottom: 0; left: 0; right: 0; z-index: 100; background: linear-gradient(180deg, transparent 0%, var(--dark) 30%); padding: 20px 20px 24px; pointer-events: none; }
+.floating-cta .cta-group { max-width: 480px; margin: 0 auto; pointer-events: all; flex-direction: row; }
+.floating-cta .cta-btn { flex: 1; padding: 14px 12px; font-size: 14px; }
+
+footer { padding: 32px 0 100px; text-align: center; border-top: 1px solid var(--dark-border); }
+.footer-legal { font-size: 11px; color: var(--text-muted); line-height: 1.8; opacity: 0.6; }
+
+.reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+.market-hook { background: linear-gradient(90deg, rgba(232,93,93,0.08) 0%, rgba(201,169,110,0.08) 100%); border-bottom: 1px solid rgba(232,93,93,0.15); padding: 12px 0; overflow: hidden; }
+.market-hook-inner { display: flex; align-items: center; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.market-hook-tag { display: inline-flex; align-items: center; gap: 5px; background: rgba(232,93,93,0.15); border: 1px solid rgba(232,93,93,0.25); padding: 3px 10px; border-radius: 100px; font-size: 11px; font-weight: 600; color: var(--accent-red); white-space: nowrap; }
+.market-hook-tag .blink { display: inline-block; width: 6px; height: 6px; background: var(--accent-red); border-radius: 50%; animation: blink 1.2s infinite; }
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.2; } }
+.market-hook-text { font-size: 12px; color: var(--text-secondary); }
+.market-hook-text strong { color: var(--gold); font-weight: 600; }
+
+.stock-compare { background: var(--dark-card); border: 1px solid var(--dark-border); border-radius: 16px; padding: 24px 20px; margin-bottom: 24px; }
+.stock-compare-title { font-size: 13px; font-weight: 500; color: var(--text-muted); margin-bottom: 16px; text-align: center; }
+.compare-bars { display: flex; flex-direction: column; gap: 12px; }
+.compare-row { display: flex; align-items: center; gap: 12px; }
+.compare-label { font-size: 12px; color: var(--text-secondary); width: 60px; flex-shrink: 0; text-align: right; }
+.compare-bar-wrap { flex: 1; height: 36px; background: rgba(255,255,255,0.03); border-radius: 8px; position: relative; overflow: hidden; }
+.compare-bar { height: 100%; border-radius: 8px; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; font-size: 12px; font-weight: 600; transition: width 1.5s ease; width: 0; }
+.bar-stock { background: linear-gradient(90deg, rgba(232,93,93,0.15) 0%, rgba(232,93,93,0.35) 100%); color: var(--accent-red); }
 .bar-stock.animated { width: 45%; }
+.bar-glamping { background: linear-gradient(90deg, rgba(201,169,110,0.15) 0%, rgba(201,169,110,0.45) 100%); color: var(--gold); }
+.bar-glamping.animated { width: 85%; }
+.compare-vs { display: flex; align-items: center; justify-content: center; gap: 8px; margin: 4px 0; font-size: 11px; color: var(--text-muted); }
+.compare-vs::before, .compare-vs::after { content: ''; flex: 1; height: 1px; background: var(--dark-border); }
 
-.bar-starlord {
-  background: linear-gradient(90deg, rgba(201,169,110,0.15) 0%, rgba(201,169,110,0.45) 100%);
-  color: var(--gold);
-}
-.bar-starlord.animated { width: 85%; }
+.zigzag-icon { display: inline-block; color: var(--accent-red); font-size: 14px; animation: zigzag 2s ease-in-out infinite; }
+@keyframes zigzag { 0%, 100% { transform: translateY(0); } 25% { transform: translateY(-3px); } 75% { transform: translateY(3px); } }
+.steady-icon { display: inline-block; color: var(--gold); font-size: 14px; }
 
-.compare-vs {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  margin: 4px 0;
-  font-size: 11px;
-  color: var(--text-muted);
-}
-
-.compare-vs::before, .compare-vs::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: var(--dark-border);
-}
-
-.zigzag-icon {
-  display: inline-block;
-  color: var(--accent-red);
-  font-size: 14px;
-  animation: zigzag 2s ease-in-out infinite;
-}
-
-@keyframes zigzag {
-  0%, 100% { transform: translateY(0); }
-  25% { transform: translateY(-3px); }
-  75% { transform: translateY(3px); }
-}
-
-.steady-icon {
-  display: inline-block;
-  color: var(--gold);
-  font-size: 14px;
-}
-
-/* ══════════════ RESPONSIVE ══════════════ */
 @media (min-width: 768px) {
   .container { max-width: 560px; padding: 0 32px; }
   .hero-title-main { font-size: 40px; }
   .invest-amount { font-size: 42px; }
   section { padding: 72px 0; }
 }
+</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11164267037"></script>
 <script>
@@ -826,30 +194,27 @@ footer {
   gtag('js', new Date());
   gtag('config', 'AW-11164267037');
 </script>
-</style>
 </head>
 <body>
 
-<!-- ═══════════ MARKET HOOK BANNER ═══════════ -->
 <div class="market-hook">
   <div class="container market-hook-inner">
     <span class="market-hook-tag"><span class="blink"></span> 증시 불안</span>
-    <span class="market-hook-text">하이엔드 글램핑의 새 기준, <strong>스타로드 오너스 클럽</strong> 모집 중</span>
+    <span class="market-hook-text">하이엔드 글램핑의 새 기준, <strong>카라반 리조트 오너스 클럽</strong> 모집 중</span>
   </div>
 </div>
 
-<!-- ═══════════ HERO ═══════════ -->
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-content container">
     <div class="hero-badge">오너스 클럽 회원 모집 중</div>
-    <h1>Starlord Caravan Resort</h1>
+    <h1>glamping Caravan Resort</h1>
     <div class="hero-title-main">
       프리미엄 <em>오너스 클럽</em><br>멤버십 회원 모집
     </div>
     <p class="hero-subtitle">
       전쟁·금리·환율에 흔들리는 주식 대신,<br>
-      특별한 혜택과 함께하는 <strong style="color:var(--gold);font-weight:500">스타로드 오너십</strong>
+      특별한 혜택과 함께하는 <strong style="color:var(--gold);font-weight:500">캠핑 리조트 멤버십</strong>
     </p>
     <div class="cta-group">
       <a href="tel:01057204472" class="cta-btn cta-primary">
@@ -871,51 +236,20 @@ footer {
         <div class="trust-label">1호점 운영 완료</div>
       </div>
       <div class="trust-item">
-        <div class="trust-value">특별</div>
+        <div class="trust-value">특별 회원권</div>
         <div class="trust-label">오너 전용 혜택</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════ PRESS ═══════════ -->
-<section class="press-section">
-  <div class="container">
-    <div class="reveal">
-      <div class="section-label">Media</div>
-      <h2 class="section-title">언론이 주목한<br>스타로드</h2>
-      <div class="gold-divider"></div>
-    </div>
-
-    <div class="reveal">
-      <a href="https://www.nbntv.kr/news/articleView.html?idxno=339027" class="press-card" target="_blank" rel="noopener">
-        <div class="press-source">NBN미디어</div>
-        <div class="press-title">"1호점 성공 신화 잇는다" 스타로드, 하이엔드 글램핑의 완성형 '스타로드_디 에테르' 주목</div>
-        <div class="press-arrow">기사 보기 →</div>
-      </a>
-      <a href="https://sports.khan.co.kr/article/202507081004003" class="press-card" target="_blank" rel="noopener">
-        <div class="press-source">스포츠경향</div>
-        <div class="press-title">코원이엔디 김덕헌 대표 "하이엔드 글램핑 대중화" 가평 스타로드 카라반 리조트 오픈</div>
-        <div class="press-arrow">기사 보기 →</div>
-      </a>
-      <a href="https://naver.me/Fc5F1Qrb" class="press-card" target="_blank" rel="noopener">
-        <div class="press-source">넥스트데일리</div>
-        <div class="press-title">코원이엔디, 가평 럭셔리 글램핑 '스타로드' 겨울 예약 90% 달성</div>
-        <div class="press-arrow">기사 보기 →</div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════ FEATURES ═══════════ -->
 <section class="features-section">
   <div class="container">
     <div class="reveal">
       <div class="section-label">Facilities</div>
       <h2 class="section-title">5성급 호텔을 넘어선<br>하이엔드 글램핑</h2>
-      <p class="section-desc">가평 명지산 자락, 자연 속 프라이빗 럭셔리</p>
+      <p class="section-desc">자연 속 프라이빗한 호화 캠핑</p>
     </div>
-
     <div class="feature-grid reveal">
       <div class="feature-card">
         <div class="feature-icon">🏕️</div>
@@ -941,36 +275,13 @@ footer {
   </div>
 </section>
 
-<!-- ═══════════ WHY STARLORD ═══════════ -->
 <section class="why-section">
   <div class="container">
     <div class="reveal">
-      <div class="section-label">Why Starlord</div>
-      <h2 class="section-title">스타로드가<br>특별한 이유</h2>
+      <div class="section-label">Why glamping</div>
+      <h2 class="section-title">왜<br>프리미엄 글램핑으로 재테크 해야 하는가</h2>
     </div>
-
     <div class="why-list">
-      <div class="why-item reveal">
-        <div class="why-number">1</div>
-        <div class="why-text">
-          <h4>원스톱 책임 경영</h4>
-          <p>(주)코원이엔디가 개발·시행·운영까지 직접 총괄. 서비스 품질 저하 원천 차단</p>
-        </div>
-      </div>
-      <div class="why-item reveal">
-        <div class="why-number">2</div>
-        <div class="why-text">
-          <h4>1호점 검증 완료</h4>
-          <p>가평 1호점 성공적 안착, 겨울 예약률 90% 달성. 실제 운영 데이터 기반 설계</p>
-        </div>
-      </div>
-      <div class="why-item reveal">
-        <div class="why-number">3</div>
-        <div class="why-text">
-          <h4>확장하는 브랜드</h4>
-          <p>2호점 '디 에테르' 런칭 예정. 양평·포천·서해안·제주 전국 네트워크 구축 중</p>
-        </div>
-      </div>
       <div class="why-item reveal">
         <div class="why-number">4</div>
         <div class="why-text">
@@ -982,12 +293,11 @@ footer {
   </div>
 </section>
 
-<!-- ═══════════ INVESTMENT HIGHLIGHT ═══════════ -->
 <section class="invest-section">
   <div class="container">
     <div class="reveal">
       <div class="section-label">Investment</div>
-      <h2 class="section-title">스타로드와 함께하는<br>오너스 클럽</h2>
+      <h2 class="section-title">프리미엄 글램핑<br>오너스 클럽</h2>
       <p class="section-desc">하이엔드 글램핑 리조트의 오너가 되어<br>특별한 혜택을 누려보세요. 상세 안내는 상담으로 진행됩니다.</p>
     </div>
 
@@ -1004,9 +314,9 @@ footer {
         </div>
         <div class="compare-vs">VS</div>
         <div class="compare-row">
-          <span class="compare-label">스타로드</span>
+          <span class="compare-label">재테크의 새 차원, 글램핑</span>
           <div class="compare-bar-wrap">
-            <div class="compare-bar bar-starlord" id="barStarlord">
+            <div class="compare-bar bar-glamping" id="barglamping">
               <span class="steady-icon">→</span>&nbsp;안정적 운영 수익
             </div>
           </div>
@@ -1016,7 +326,7 @@ footer {
 
     <div class="invest-card reveal">
       <div class="invest-card-label">매월 수익 구조</div>
-      <div class="invest-amount invest-highlight" style="font-size:24px;line-height:1.4;">오너 전용 혜택<br><span style="font-size:14px;color:var(--text-secondary);font-weight:400;">멤버십 회원만의 특별한 프리빌리지</span></div>
+      <div class="invest-amount invest-highlight" style="font-size:24px;line-height:1.4;">회원 전용 혜택<br><span style="font-size:14px;color:var(--text-secondary);font-weight:400;">멤버십 회원만의 특별한 프리빌리지</span></div>
       <div class="invest-note">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
         1호점 운영 데이터로 검증 완료
@@ -1034,23 +344,18 @@ footer {
   </div>
 </section>
 
-
-<!-- ═══════════ CONSULTANT ═══════════ -->
 <section class="consultant-section">
   <div class="container">
     <div class="consultant-card reveal">
-      <div class="consultant-avatar" style="width:100%;height:180px;border-radius:12px;overflow:hidden;margin-bottom:20px;background:url('starlord-pool.jpg') center/cover no-repeat;font-size:0;"></div>
       <div class="consultant-name">김순아 차장</div>
       <div class="consultant-role">멤버십 상담 전문</div>
-      <div class="consultant-company">(주)코원이엔디</div>
       <div class="consultant-msg">
-        "스타로드 카라반 리조트 오너스 클럽 멤버십에 대해 자세히 안내드리겠습니다. 궁금하신 점은 편하게 연락 주세요."
+        "카라반 리조트 오너스 클럽 멤버십에 대해 자세히 안내드리겠습니다. 궁금하신 점은 편하게 연락 주세요."
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════ BOTTOM CTA ═══════════ -->
 <section class="bottom-cta">
   <div class="container">
     <div class="reveal">
@@ -1060,7 +365,6 @@ footer {
   </div>
 </section>
 
-<!-- ═══════════ FLOATING CTA ═══════════ -->
 <div class="floating-cta">
   <div class="cta-group">
     <a href="tel:01057204472" class="cta-btn cta-primary">
@@ -1074,22 +378,15 @@ footer {
   </div>
 </div>
 
-<!-- ═══════════ FOOTER ═══════════ -->
 <footer>
   <div class="container">
-    <div class="footer-logo">STARLORD</div>
-    <div class="footer-company">(주)코원이엔디 · 대표 김덕헌</div>
-    <div class="footer-company">경기도 고양시 덕양구 향동로 128, 스타비즈 4st, 1511호</div>
-    <div class="footer-company" style="margin-bottom:12px">대표전화 1533-2568</div>
     <div class="footer-legal">
       상세 조건은 상담을 통해 확인하시기 바랍니다.<br><br>
-      © 2026 COWON E&D. All rights reserved.
     </div>
   </div>
 </footer>
 
 <script>
-// Scroll reveal animation
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -1100,14 +397,13 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// Animate comparison bars when visible
 const compareObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       const barStock = document.getElementById('barStock');
-      const barStarlord = document.getElementById('barStarlord');
+      const barglamping = document.getElementById('barglamping');
       if (barStock) barStock.classList.add('animated');
-      if (barStarlord) setTimeout(() => barStarlord.classList.add('animated'), 300);
+      if (barglamping) setTimeout(() => barglamping.classList.add('animated'), 300);
       compareObserver.unobserve(entry.target);
     }
   });
@@ -1116,7 +412,6 @@ const compareObserver = new IntersectionObserver((entries) => {
 const compareChart = document.getElementById('compareChart');
 if (compareChart) compareObserver.observe(compareChart);
 
-// Hide floating CTA at top
 const floatingCta = document.querySelector('.floating-cta');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 600) {
