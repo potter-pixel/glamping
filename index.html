@@ -279,15 +279,57 @@ footer { padding: 32px 0 100px; text-align: center; border-top: 1px solid var(--
   <div class="container">
     <div class="reveal">
       <div class="section-label">Why glamping</div>
-      <h2 class="section-title">왜<br>프리미엄 글램핑으로 재테크 해야 하는가</h2>
+      <h2 class="section-title">프리미엄 글램핑,<br>왜 지금인가</h2>
     </div>
-    <div class="why-list">
-      <div class="why-item reveal">
-        <div class="why-number">4</div>
-        <div class="why-text">
-          <h4>성장하는 시장</h4>
-          <p>하이엔드 레저 시장 급성장. 프리미엄 글램핑 수요 지속 확대 중</p>
+
+    <div class="reveal" id="marketChart" style="background:var(--dark-card);border:1px solid var(--dark-border);border-radius:16px;padding:24px 20px;margin-bottom:20px;">
+      <div style="font-size:14px;color:var(--text-muted);margin-bottom:4px;">국내 캠핑 시장 규모</div>
+      <div style="font-size:24px;font-weight:900;color:var(--gold);margin-bottom:20px;">4조 → 10조원 <span style="font-size:14px;font-weight:400;color:var(--accent-green);">+150%</span></div>
+      <div style="display:flex;align-items:flex-end;gap:8px;height:140px;padding-bottom:8px;border-bottom:1px solid var(--dark-border);">
+        <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;">
+          <div class="growth-bar" data-height="40" style="width:100%;background:rgba(201,169,110,0.2);border-radius:6px 6px 0 0;height:0;transition:height 1s ease;"></div>
+          <span style="font-size:11px;color:var(--text-muted);">2020</span>
         </div>
+        <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;">
+          <div class="growth-bar" data-height="56" style="width:100%;background:rgba(201,169,110,0.3);border-radius:6px 6px 0 0;height:0;transition:height 1s ease 0.15s;"></div>
+          <span style="font-size:11px;color:var(--text-muted);">2021</span>
+        </div>
+        <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;">
+          <div class="growth-bar" data-height="72" style="width:100%;background:rgba(201,169,110,0.4);border-radius:6px 6px 0 0;height:0;transition:height 1s ease 0.3s;"></div>
+          <span style="font-size:11px;color:var(--text-muted);">2022</span>
+        </div>
+        <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;">
+          <div class="growth-bar" data-height="84" style="width:100%;background:rgba(201,169,110,0.5);border-radius:6px 6px 0 0;height:0;transition:height 1s ease 0.45s;"></div>
+          <span style="font-size:11px;color:var(--text-muted);">2023</span>
+        </div>
+        <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;">
+          <div class="growth-bar" data-height="100" style="width:100%;background:rgba(201,169,110,0.6);border-radius:6px 6px 0 0;height:0;transition:height 1s ease 0.6s;"></div>
+          <span style="font-size:11px;color:var(--text-muted);">2024</span>
+        </div>
+        <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;">
+          <div class="growth-bar" data-height="130" style="width:100%;background:linear-gradient(180deg, var(--gold) 0%, var(--gold-dark) 100%);border-radius:6px 6px 0 0;height:0;transition:height 1s ease 0.75s;"></div>
+          <span style="font-size:11px;color:var(--gold);font-weight:600;">2025</span>
+        </div>
+      </div>
+      <div style="font-size:11px;color:var(--text-muted);margin-top:8px;">출처: 캠핑저널, 한국캠핑산업협회</div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+      <div class="reveal" style="background:var(--dark-card);border:1px solid var(--dark-border);border-radius:12px;padding:20px 16px;text-align:center;">
+        <div style="font-size:28px;font-weight:900;color:var(--gold);">700만+</div>
+        <div style="font-size:13px;color:var(--text-muted);margin-top:4px;">국내 캠핑 인구</div>
+      </div>
+      <div class="reveal" style="background:var(--dark-card);border:1px solid var(--dark-border);border-radius:12px;padding:20px 16px;text-align:center;">
+        <div style="font-size:28px;font-weight:900;color:var(--gold);">11.7%</div>
+        <div style="font-size:13px;color:var(--text-muted);margin-top:4px;">글램핑 시장 연성장률</div>
+      </div>
+      <div class="reveal" style="background:var(--dark-card);border:1px solid var(--dark-border);border-radius:12px;padding:20px 16px;text-align:center;">
+        <div style="font-size:28px;font-weight:900;color:var(--gold);">4,000+</div>
+        <div style="font-size:13px;color:var(--text-muted);margin-top:4px;">전국 캠핑장 수</div>
+      </div>
+      <div class="reveal" style="background:var(--dark-card);border:1px solid var(--dark-border);border-radius:12px;padding:20px 16px;text-align:center;">
+        <div style="font-size:28px;font-weight:900;color:var(--gold);">27%</div>
+        <div style="font-size:13px;color:var(--text-muted);margin-top:4px;">글램핑 선호 비율</div>
       </div>
     </div>
   </div>
@@ -314,7 +356,7 @@ footer { padding: 32px 0 100px; text-align: center; border-top: 1px solid var(--
         </div>
         <div class="compare-vs">VS</div>
         <div class="compare-row">
-          <span class="compare-label">재테크의 새 차원, 글램핑</span>
+          <span class="compare-label">재테크의<br>새 차원,<br>글램핑</span>
           <div class="compare-bar-wrap">
             <div class="compare-bar bar-glamping" id="barglamping">
               <span class="steady-icon">→</span>&nbsp;안정적 운영 수익
@@ -411,6 +453,20 @@ const compareObserver = new IntersectionObserver((entries) => {
 
 const compareChart = document.getElementById('compareChart');
 if (compareChart) compareObserver.observe(compareChart);
+
+// Market chart bar animation
+const chartObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      document.querySelectorAll('.growth-bar').forEach(bar => {
+        bar.style.height = bar.dataset.height + 'px';
+      });
+      chartObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.3 });
+const marketChart = document.getElementById('marketChart');
+if (marketChart) chartObserver.observe(marketChart);
 
 const floatingCta = document.querySelector('.floating-cta');
 window.addEventListener('scroll', () => {
